@@ -1,0 +1,40 @@
+/* Estilo CSS */
+
+/* Zerando ViewPort Escala de resolução */
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+/* Body - Area do conteudo */
+body{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-size: 16px;
+}
+
+/* CARD */
+.card-img-perfil{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+
+/* FOOTER */
+.footerTitle{
+    margin: 0 auto;
+    padding: 0px;
+}
+
+.footerSubitle{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px;
+    font-weight: 100;
+    font-size: 15px;
+}
