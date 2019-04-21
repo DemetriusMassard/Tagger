@@ -106,3 +106,159 @@ img.card-img-top:hover{
     font-weight: 100;
     font-size: 15px;
 }
+/* imagem da grade*/
+ #link-galeria{
+    width:100%;
+    height:100%;
+    list-style:none;
+    display:flex;
+    margin:2% auto; 
+    cursor:hand;  
+    
+    }
+  #efeito1 img{
+    max-width: 100%;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;   
+    }
+  #efeito1:hover img{
+    -moz-transform:scale(0.9);
+    -webkit-transform:scale(0.9);
+    ransform: scale(0.9);
+    }
+  #efeito2 img{
+     max-width: 100%;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;   
+    }
+  #efeito2:hover img{
+    -moz-transform:scale(0.9);
+    -webkit-transform:scale(0.9);
+    ransform: scale(0.9);
+    }
+  #efeito3 img{
+    max-width: 100%;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;   
+    }
+  #efeito3:hover img{
+    -moz-transform:scale(0.9);
+    -webkit-transform:scale(0.9);
+    ransform: scale(0.9);
+    }
+  #efeito4 img{
+    max-width: 100%;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;   
+    }
+  #efeito4:hover img{
+    -moz-transform:scale(0.9);
+    -webkit-transform:scale(0.9);
+    ransform: scale(0.9);
+    }
+ .mouduras-galeria{
+    
+    width:100%;
+    height:100%; 
+    padding:2%;
+    border-radius:6%;
+    display:flex;
+    position:relative;
+    margin:0%;
+    
+    }
+ .lbox-galeria:target{
+     
+    opacity:1;
+    visibility:visible;  
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background:rgba(10,10,10,.7);
+    position:absolute;  
+    padding-top:15%;
+    padding-left:30%;
+    margin-bottom:  auto;
+    }     
+ .lbox-galeria{
+    visibility:hidden;
+    opacity:0;
+    }
+  .box_img-galeria{
+    text-align:center;
+    width:100%;
+     height: 100%;
+    padding-right:60%;
+    margin:0px auto;
+    overflow:hidden;
+    }
+  .btn-galeria{
+    color:white;
+    font-family:'Arial';
+    text-decoration:none;
+    position:absolute;
+    width:50px;
+    height:50px;
+    font-size:40px;
+    text-align:center; 
+    }
+  #prev{
+    color:white;
+    left:5%;
+    top:45%;
+    font-weight:700;
+    }
+  #next{
+    color:white;
+    right:5%;
+    top:45%;  
+    font-weight:700;
+    }
+  #close{
+    color: white;
+    top:10%;
+    right:2%;
+    font-weight:700;
+    }
+  .box_img img{
+    opacity:0;
+    }
+  .lbox-galeria:target .box_img img{
+    width:80%;
+    margin-left:100px;
+    margin-top:60px;
+    opacity: 1;
+    transition: opacity .4s linear;  
+    }
+  .imgx-galeria{
+    text-align: center;
+    width:1%;
+    height:1%;
+    }
+  #img-div-epaço{
+   
+    width:150%;
+    
+    border-radius: 6%;
+    }
+  .galeria-div{ 
+      text-align: center;
+    width:1%;
+    height:1%;
+    }
+    @media only screen and (max-width: 991px){
+     .box_img-galeria{
+     width: 110%;
+     margin-top: 50%;
+     margin-left: -10%;
+     }
+     #img-div-epaço{
+      margin-top: 50%;
+     }
+     
+    }
