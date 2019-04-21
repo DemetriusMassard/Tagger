@@ -15,13 +15,38 @@ body{
     border: 0px;
     font-size: 16px;
 }
-
+/* logo */
+#mainNavbar img{
+    height: 50px;
+    width: 120px;
+}
 /* CARD */
 .card-img-perfil{
     width: 200px;
     height: 200px;
     margin: 0 auto;
     margin-top: 20px;
+}
+
+/*TEXTO DESCRIÇÃO DE PROJETOS/TRABALHOS */
+.card-body-conteudo{
+    box-shadow: 2px 2px 2px lightgray;
+    height: 200px;
+    overflow: auto;
+    padding: 10px;
+}
+/* IMAGEM PREVIEW CONTEUDO/PROJETOS */
+.card-img-top{
+    border-radius: 1px;
+    box-shadow: 2px 2px 2px lightgray;
+    
+}
+img.card-img-top:hover{
+    margin-left: -70px;
+    float: left;
+    width: 500px;
+    transition: 2s;
+    z-index: 10;
 }
 
 
