@@ -20,6 +20,30 @@ body{
     height: 50px;
     width: 120px;
 }
+
+.backgroundHeader{
+	background-position: 0px -100px;
+	height:380px;
+	width:100%;
+	-webkit-filter: blur(4px);
+	filter: blur(4px);
+	background-image:url(../images/code-coding-css-92905.jpg);
+	background-attachment:fixed;
+	background-size:cover;
+	position:absolute;
+}
+
+.textHeader{
+	color:#FFF;
+	-webkit-filter: blur(0px);
+	filter: blur(0px);
+	float:none;
+}
+
+.imgHeader{
+	width:120px;
+	float:right;
+}
 /* CARD */
 .card-img-perfil{
     width: 200px;
