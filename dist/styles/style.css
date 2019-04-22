@@ -31,6 +31,9 @@ body{
     background-color: #1c1c1c;
     transition:0.5s;
 }
+.grade-de-mostruarior{
+   width:100%;
+}
 @media only screen and (max-width: 991px){
     .navbar-default{
     background-color: #1c1c1c;
@@ -57,7 +60,7 @@ body{
 
 .imgHeader{
 	width:120px;
-	float:right;
+        float:right;
 }
 
 
@@ -106,7 +109,9 @@ img.card-img-top:hover{
     font-weight: 100;
     font-size: 15px;
 }
-/* imagem da grade*/
+
+
+/* Style da grade*/
  #link-galeria{
     width:100%;
     height:100%;
@@ -114,7 +119,6 @@ img.card-img-top:hover{
     display:flex;
     margin:2% auto; 
     cursor:hand;  
-    
     }
   #efeito1 img{
     max-width: 100%;
@@ -161,7 +165,6 @@ img.card-img-top:hover{
     ransform: scale(0.9);
     }
  .mouduras-galeria{
-    
     width:100%;
     height:100%; 
     padding:2%;
@@ -169,21 +172,22 @@ img.card-img-top:hover{
     display:flex;
     position:relative;
     margin:0%;
-    
     }
  .lbox-galeria:target{
-     
+    margin: 0;
+     text-align: center;
     opacity:1;
     visibility:visible;  
-    width:100%;
-    height:100%;
-    top:0;
-    left:0;
+    width:80%;
+    height:85%;
+    top:53%;
+    left:10%;
     background:rgba(10,10,10,.7);
     position:absolute;  
     padding-top:15%;
     padding-left:30%;
-    margin-bottom:  auto;
+    margin-bottom:auto;
+    border-radius:6%;
     }     
  .lbox-galeria{
     visibility:hidden;
@@ -192,7 +196,7 @@ img.card-img-top:hover{
   .box_img-galeria{
     text-align:center;
     width:100%;
-     height: 100%;
+    height: 100%;
     padding-right:60%;
     margin:0px auto;
     overflow:hidden;
@@ -241,24 +245,52 @@ img.card-img-top:hover{
     height:1%;
     }
   #img-div-epaço{
-   
-    width:150%;
-    
+    margin: 0;
+    width:70%;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) ;
+    position: absolute;
     border-radius: 6%;
     }
   .galeria-div{ 
-      text-align: center;
+    text-align: center;
     width:1%;
     height:1%;
     }
-    @media only screen and (max-width: 991px){
-     .box_img-galeria{
-     width: 110%;
-     margin-top: 50%;
-     margin-left: -10%;
-     }
-     #img-div-epaço{
-      margin-top: 50%;
-     }
+    /* Style da grade mobi*/
+ @media only screen and (max-width: 1000px){
      
+  .box_img-galeria{
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: auto;
+     margin-bottom: auto;
+     top: 50%;   
+     }
+  #img-div-epaço{
+        width:60%;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%) ;
+        position: absolute;
+     }
+  #link-galeria{
+        width: 110%;
+        padding-right: 10%; 
+     }
+  .lbox-galeria{
+         margin-top: 70%;
+         width: 50%;
+         height: 50%;
+     }
+  #close{
+         margin-right: 8%;
+         margin-top: -3%;
+     }
+   
     }
+    /* Fim do Style da grade */
