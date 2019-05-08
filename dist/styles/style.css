@@ -15,6 +15,8 @@ body{
     border: 0px;
     font-size: 16px;
 }
+
+
 /* logo */
 #mainNavbar img{
     height: 50px;
@@ -22,7 +24,7 @@ body{
 }
 
 
-/* Navbar */
+/* NAVBAR */
 .navbar-default{
     background-color: transparent;
     transition:0.5s;
@@ -41,9 +43,12 @@ body{
     transition:0.5s;
 }
 }
+/* .NAVBAR */
 
 
 
+
+/* HEADER */
 .backgroundHeader{
 	background-image:url(../images/bannerHeaderBlur.jpg);
 	background-size:cover;
@@ -63,37 +68,43 @@ body{
 	width:120px;
         float:right;
 }
+/* .HEADER */
 
 
 
 
-/* CARD */
+.title-projetos{
+    font-size: 40px;
+    font-weight: 400;
+}
+.subtitle-projetos{
+    font-size: 20px;
+    font-weight: 100;
+}
+.card-projetos{
+    color: #1c1c1c;
+    transition: color 0.3s, transform 0.3s;
+}
+.card-projetos:hover{
+    text-decoration: none;
+    color: #434343;
+    transform: scale(0.90);
+}
+.linha-conteudo{
+    width: 100px;
+    height: 5px;
+    margin: 15px auto 15px auto;
+    border: 0px;
+    background: #363636;
+    border-radius: 100px;
+}
+
+
+
 .card-img-perfil{
     width: 200px;
     height: 200px;
-    margin: 0 auto;
-    margin-top: 20px;
-}
-
-/*TEXTO DESCRIÇÃO DE PROJETOS/TRABALHOS */
-.card-body-conteudo{
-    box-shadow: 2px 2px 2px lightgray;
-    height: 200px;
-    overflow: auto;
-    padding: 10px;
-}
-/* IMAGEM PREVIEW CONTEUDO/PROJETOS */
-.card-img-top{
-    border-radius: 1px;
-    box-shadow: 2px 2px 2px lightgray;
-    
-}
-img.card-img-top:hover{
-    margin-left: -70px;
-    float: left;
-    width: 500px;
-    transition: 2s;
-    z-index: 10;
+    margin: 20px auto 0px auto;
 }
 
 
@@ -112,200 +123,3 @@ img.card-img-top:hover{
 }
 
 
-/* Style da grade*/
-.titolo-texto-da-grade{
-    font-size:22px;
-    font-style:inherit;
-    text-align: center;
-}
-#texto-grade{
-    font-size: 17px;
-    font-style: inherit;
-    text-align: center;
-    margin-bottom: auto;
-}
-
- #link-galeria{
-  width:100%;
-    height:100%;
-    list-style:none;
-    display:flex;
-    margin:2% auto; 
-    cursor:hand;  
-    }
-  #efeito1 img{
-    max-width: 100%;
-    -moz-transition: all 0.2s;
-    -webkit-transition: all 0.2s;
-    transition: all 0.2s;   
-    }
-  #efeito1:hover img{
-    -moz-transform:scale(0.9);
-    -webkit-transform:scale(0.9);
-    ransform: scale(0.9);
-    }
-  #efeito2 img{
-     max-width: 100%;
-    -moz-transition: all 0.2s;
-    -webkit-transition: all 0.2s;
-    transition: all 0.2s;   
-    }
-  #efeito2:hover img{
-    -moz-transform:scale(0.9);
-    -webkit-transform:scale(0.9);
-    ransform: scale(0.9);
-    }
-  #efeito3 img{
-    max-width: 100%;
-    -moz-transition: all 0.2s;
-    -webkit-transition: all 0.2s;
-    transition: all 0.2s;   
-    }
-  #efeito3:hover img{
-    -moz-transform:scale(0.9);
-    -webkit-transform:scale(0.9);
-    ransform: scale(0.9);
-    }
-  #efeito4 img{
-    max-width: 100%;
-    -moz-transition: all 0.2s;
-    -webkit-transition: all 0.2s;
-    transition: all 0.2s;   
-    }
-  #efeito4:hover img{
-    -moz-transform:scale(0.9);
-    -webkit-transform:scale(0.9);
-    ransform: scale(0.9);
-    }
- .mouduras-galeria{
-    width:100%;
-    height:100%; 
-    padding:2%;
-    border-radius:6%;
-    display:flex;
-    position:relative;
-    margin:0%;
-    }
- .lbox-galeria:target{
-    margin: 0;
-    text-align: center;
-    opacity:1;
-    visibility:visible;  
-    width:80%;
-    height:85%;
-    top:53%;
-    left:10%;
-    background:rgba(10,10,10,.9);
-    position:absolute;  
-    padding-top:15%;
-    padding-left:30%;
-    margin-bottom:auto;
-    border-radius:6%;
-    }     
- .lbox-galeria{
-    visibility:hidden;
-    opacity:0;
-    }
-  .box_img-galeria{
-    text-align:center;
-    width:100%;
-    height: 100%;
-    padding-right:60%;
-    margin:0px auto;
-    overflow:hidden;
-    
-    }
-  .btn-galeria{
-    color:white;
-    font-family:'Arial';
-    text-decoration:none;
-    position:absolute;
-    width:50px;
-    height:50px;
-    font-size:40px;
-    text-align:center; 
-    }
-  #prev{
-    color:white;
-    left:5%;
-    top:45%;
-    font-weight:700;
-    }
-  #next{
-    color:white;
-    right:5%;
-    top:45%;  
-    font-weight:700;
-    }
-  #close{
-    color: white;
-    top:10%;
-    right:2%;
-    font-weight:700;
-    }
-  .box_img img{
-    opacity:0;
-    }
-  .lbox-galeria:target .box_img img{
-    width:80%;
-    margin-left:100px;
-    margin-top:60px;
-    opacity: 1;
-    transition: opacity .4s linear;  
-    }
-  .imgx-galeria{
-    text-align: center;
-    width:1%;
-    height:1%;
-    }
-  #img-div-epaço{
-    margin: 0;
-    width:70%;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%) ;
-    position: absolute;
-    border-radius: 6%;
-    }
-  .galeria-div{
-    margin-top: -3%;
-    text-align: center;
-    width:1%;
-    height:1%;
-    }
-    /* Style da grade mobi*/
- @media only screen and (max-width: 1000px){
-     
-  .box_img-galeria{
-     display: block;
-     margin-left: auto;
-     margin-right: auto;
-     margin-top: auto;
-     margin-bottom: auto;
-     top: 50%;   
-     }
-  #img-div-epaço{
-        width:60%;
-        top: 50%;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%) ;
-        position: absolute;
-     }
-  #link-galeria{
-        width: 110%;
-        padding-right: 10%; 
-     }
-  .lbox-galeria{
-         margin-top: 70%;
-         width: 50%;
-         height: 50%;
-     }
-  #close{
-         margin-right: 8%;
-         margin-top: -3%;
-     }
-   
-    }
-    /* Fim do Style da grade */
