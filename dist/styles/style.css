@@ -27,11 +27,11 @@ body{
 /* NAVBAR */
 .navbar-default{
     background-color: transparent;
-    transition:0.5s;
+    transition: background 1s;
 }
 .navbar-scroll{
     background-color: #1c1c1c;
-    transition:0.5s;
+    transition: background 1s;
 }
 .grade-de-mostruarior{
   
