@@ -19,3 +19,20 @@ jQuery(function () {
   });
     
 });
+
+
+function scrollBanner() {
+
+    var scrollPos;
+  
+    var parallax = document.querySelector('.parallax');
+  
+    scrollPos = window.scrollY;
+
+    if (scrollPos <= 500) {
+      
+        parallax.style.transform =  "translateY(" + (-scrollPos/5) +"px" + ")";
+
+    }
+}
+window.addEventListener('scroll', scrollBanner);

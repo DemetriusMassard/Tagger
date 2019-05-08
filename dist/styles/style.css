@@ -49,25 +49,20 @@ body{
 
 
 /* HEADER */
-.backgroundHeader{
-	background-image:url(../images/bannerHeaderBlur.jpg);
-	background-size:cover;
-	background-attachment: fixed;
+.Header{
+    width: 100%;    
+    background-color: #000;
+	background-image:url(../images/BannerHeader02.png);
     background-position: center center;
-    padding: 20px 0px 20px 0px;
+    background-attachment: fixed;
+    padding: 20px 0px 20px;
 }
+
 
 .textHeader{
 	color:#FFF;
-	-webkit-filter: blur(0px);
-	filter: blur(0px);
-	float:none;
 }
 
-.imgHeader{
-	width:120px;
-        float:right;
-}
 /* .HEADER */
 
 
