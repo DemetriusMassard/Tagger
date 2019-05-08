@@ -31,7 +31,7 @@ function scrollBanner() {
 
     if (scrollPos <= 500) {
       
-        parallax.style.transform =  "translateY(" + (-scrollPos/5) +"px" + ")";
+        parallax.style.transform =  "translateY(" + (-scrollPos/3) +"px" + ")";
 
     }
 }
