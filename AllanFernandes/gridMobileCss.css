@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+}
+/* INSTANCIA DO GRID */
+#main{ display: grid;
+grid-template-areas: "header header" "nav nav" "content content" "aside aside"  "footer footer";
+grid-template-rows: 10vh 10vh 55vh 55vh 20vh;
+}
+/* ATRIBUIÇÃO GRID */
+.mainHeader{grid-area: header; background-color: black ;}
+
+.mainNav{grid-area: nav; background-color: red ;}
+
+.mainContent{grid-area: content; background-color: orange ;}
+
+.mainAside{grid-area: aside ; background-color: blue ;}
+
+.mainFooter{grid-area: footer; background-color: purple ;}
+@media only screen and (max-width: 748px){
+    
+    #main{
+        /* mudando padrão de layout para cada linha um conceito*/
+        grid-template-areas: "nav nav" "header header" "content content" "aside aside" "footer footer";
+    }
+    
+}

@@ -1,0 +1,59 @@
+/* template FashionStore */
+/* Dev: Fabricio Oliveria */
+
+.nav-logo:before{
+    width: 155px;
+    background: ;
+    text-align: center;
+    content: "FashionStore";
+    color: #FFF;
+    margin: 0 auto;
+    padding: 5px 8px 5px 8px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 8px;
+}
+.nav-icon{
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+    padding: 0px;
+}
+.nav-img{
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    margin: 0 auto;
+    padding: 0px;
+    border-radius: 50%;
+}
+.navbar-toggler{
+    border: 0px; 
+    color: #000;
+}
+.online{
+    width: 8px;
+    height: 8px;
+    background: #00ff00;
+    float: right;
+    border-radius: 50%;
+}
+
+.carrinho{
+    width: 8px;
+    height: 8px;
+    background: #00d8ff;
+    float: right;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 500px){
+    .nav-logo:before{
+        width: 68px;
+        content: "FStore";
+        left: 10px;
+        right: 100%;
+}

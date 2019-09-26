@@ -1,0 +1,415 @@
+<!-- LOJA INDEX -->
+<!-- Dev: Fabricio Oliveira Template: FashionStore -->
+
+<!DOCTYPE html>
+<html>
+    
+<head type-include="Loja">
+
+    <title>FashionStore</title>
+
+    <link rel="icon" sizes="36x36" href="dist/img/logos/logo.png" />
+
+
+    <meta charset="utf-8">
+
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="dist/css/bibliotecas/bootstrap.css">
+
+    <script src="dist/js/bibliotecas/jquery.js"></script>
+
+    <script src="dist/js/bibliotecas/bootstrap.js"></script>
+
+    <link rel="stylesheet" href="dist/css/loja/body.css">
+
+    <link rel="stylesheet" href="dist/css/loja/navbar.css">
+
+    <link rel="stylesheet" href="dist/css/loja/header.css">
+
+    <link rel="stylesheet" href="dist/css/loja/card.css">
+
+    <link rel="stylesheet" href="dist/css/loja/produto.css">
+
+    <link rel="stylesheet" href="dist/css/loja/login.css">
+    
+</head>
+    
+<body>
+    
+     <nav class="navbar navbar-expand navbar-dark bg-black sticky-top">
+
+         <div class="container">
+
+             <a class="navbar-brand" href="#">
+                 <logo class="nav-logo"></logo>
+             </a>
+
+             <ul class="navbar-nav ml-auto">
+
+                 <li class="nav-item active">
+                     <a class="nav-link" href="#"><span class="sr-only">(current)</span>
+
+                         <svg id="i-cart" class="nav-icon" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                             <path d="M6 6 L30 6 27 19 9 19 M27 23 L10 23 5 2 2 2" />
+                             <circle cx="25" cy="27" r="2" />
+                             <circle cx="12" cy="27" r="2" />
+                         </svg>
+
+
+                     </a>
+                 </li>
+
+                 <li class="nav-item active">
+
+                     <a class="nav-link" href="#"><span class="sr-only">(current)</span>
+                         <svg id="i-user" class="nav-icon" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                             <path d="M22 11 C22 16 19 20 16 20 13 20 10 16 10 11 10 6 12 3 16 3 20 3 22 6 22 11 Z M4 30 L28 30 C28 21 22 20 16 20 10 20 4 21 4 30 Z" />
+                         </svg>
+                     </a>
+
+                 </li>
+
+             </ul>
+
+         </div>
+
+     </nav>
+
+     <nav class="navbar navbar-expand-lg navbar-light bg-light nav-category">
+
+         <div class="container">
+
+             <a class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+             </a>
+
+             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                 <ul class="navbar-nav mr-auto">
+
+                     <li class="nav-item">
+                         <a class="nav-link" href="#">TODOS</a>
+                     </li>
+
+                     <li class="nav-item dropdown">
+                         <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             MASCULINO
+                         </a>
+                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                             <a class="dropdown-item" href="#">Todos</a>
+                             <a class="dropdown-item" href="#">Adulto</a>
+                             <a class="dropdown-item" href="#">Infantil</a>
+                             <a class="dropdown-item" href="#">Teen</a>
+                         </div>
+                     </li>
+
+                     <li class="nav-item dropdown">
+                         <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             FEMININO
+                         </a>
+                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                             <a class="dropdown-item" href="#">Todos</a>
+                             <a class="dropdown-item" href="#">Adulto</a>
+                             <a class="dropdown-item" href="#">Infantil</a>
+                             <a class="dropdown-item" href="#">Teen</a>
+                         </div>
+                     </li>
+
+                     <li class="nav-item dropdown">
+                         <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             Infantil
+                         </a>
+                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                             <a class="dropdown-item" href="#">Masculino</a>
+                             <a class="dropdown-item" href="#">Feminino</a>
+                         </div>
+                     </li>
+
+                     <li class="nav-item dropdown">
+                         <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             Teen
+                         </a>
+                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                             <a class="dropdown-item" href="#">Masculino</a>
+                             <a class="dropdown-item" href="#">Feminino</a>
+                         </div>
+                     </li>
+
+                     <li class="nav-item dropdown">
+                         <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             Adulto
+                         </a>
+                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                             <a class="dropdown-item" href="#">Masculino</a>
+                             <a class="dropdown-item" href="#">Feminino</a>
+                         </div>
+                     </li>
+
+                 </ul>
+
+                 <ul class="navbar-nav ml-auto">
+
+
+
+                     <li class="nav-item">
+                         <a class="nav-link" href="#">Contato</a>
+                     </li>
+
+                     <li class="nav-item">
+                         <a class="nav-link" href="#">Sobre</a>
+                     </li>
+                 </ul>
+
+             </div>
+
+         </div>
+
+     </nav>
+    
+     <section id="Conteudo">
+
+         <div class="banner b-index">
+
+             <div class="b-index"></div>
+
+             <div class="container">
+                 <h5 class="b-title"># Todos os itens</h5>
+             </div>
+
+         </div>
+
+         <div class="container">
+
+             <div class="row">
+
+
+                 <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+
+                     <a class="card-link text-dark" href="#">
+
+                         <div class="card">
+
+                             <img class="card-img-top" src="dist/img/produtos/Camiseta%20Malha%20Os%20Simpsons.jpg" alt="Card image cap">
+
+                             <div class="card-body">
+
+                                 <p class="card-title">
+                                    Camiseta malha os simpsons
+                                 </p>
+
+                                 <p class="card-text">
+
+                                    
+
+                                 </p>
+
+                                 <p class="card-text">
+
+                                     <strong>
+                                         20%
+                                     </strong>
+                                     DE DESCONTO
+
+                                 </p>
+
+                                 <p class="card-text">
+
+                                     DE:
+                                     <strong>
+                                       59,99
+                                     </strong>
+
+                                     POR:
+                                     <strong>
+                                         47,99
+                                     </strong>
+
+                                 </p>
+
+
+                             </div>
+
+                         </div>
+
+                     </a>
+
+                 </div>
+                 
+                 
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+
+                     <a class="card-link text-dark" href="#">
+
+                         <div class="card">
+
+                             <img class="card-img-top" src="dist/img/produtos/Camiseta%20Malha%20Skate.jpg" alt="Card image cap">
+
+                             <div class="card-body">
+
+                                 <p class="card-title">
+                                    Camiseta malha os skate
+                                 </p>
+
+                                 <p class="card-text">
+
+                                    
+
+                                 </p>
+
+                                 <p class="card-text">
+
+                                     <strong>
+                                         10%
+                                     </strong>
+                                     DE DESCONTO
+
+                                 </p>
+
+                                 <p class="card-text">
+
+                                     DE:
+                                     <strong>
+                                       39,99
+                                     </strong>
+
+                                     POR:
+                                     <strong>
+                                         35,99
+                                     </strong>
+
+                                 </p>
+
+
+                             </div>
+
+                         </div>
+
+                     </a>
+
+                 </div>
+                 
+                                 <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+
+                     <a class="card-link text-dark" href="#">
+
+                         <div class="card">
+
+                             <img class="card-img-top" src="dist/img/produtos/Camiseta%20Tropical.jpg" alt="Card image cap">
+
+                             <div class="card-body">
+
+                                 <p class="card-title">
+                                    Camiseta tropical
+                                 </p>
+
+                                 <p class="card-text">
+
+                                    
+
+                                 </p>
+
+                                 <p class="card-text">
+
+                                     <strong>
+                                         10%
+                                     </strong>
+                                     DE DESCONTO
+
+                                 </p>
+
+                                 <p class="card-text">
+
+                                     DE:
+                                     <strong>
+                                       39,99
+                                     </strong>
+
+                                     POR:
+                                     <strong>
+                                         35,99
+                                     </strong>
+
+                                 </p>
+
+
+                             </div>
+
+                         </div>
+
+                     </a>
+
+                 </div>
+                 
+                 
+                                  <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+
+                     <a class="card-link text-dark" href="#">
+
+                         <div class="card">
+
+                             <img class="card-img-top" src="dist/img/produtos/Regata%20Telada%20Future%20Princess.jpg" alt="Card image cap">
+
+                             <div class="card-body">
+
+                                 <p class="card-title">
+                                    Regata telada future
+                                 </p>
+
+                                 <p class="card-text">
+
+                                    
+
+                                 </p>
+
+                                 <p class="card-text">
+
+                                     <strong>
+                                         20%
+                                     </strong>
+                                     DE DESCONTO
+
+                                 </p>
+
+                                 <p class="card-text">
+
+                                     DE:
+                                     <strong>
+                                       59,99
+                                     </strong>
+
+                                     POR:
+                                     <strong>
+                                         47,99
+                                     </strong>
+
+                                 </p>
+
+
+                             </div>
+
+                         </div>
+
+                     </a>
+
+                 </div>
+
+             </div>
+
+         </div>
+
+     </section>
+    
+    <footer class="mt-5 mb-3">
+    
+        <h5 class="text-center">FashionStore</h5>
+    
+        <p class="text-center">Todos os direitos reservados</p>
+        
+    </footer>
+    
+</body>    
+
+</html>

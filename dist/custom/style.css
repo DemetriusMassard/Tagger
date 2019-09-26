@@ -1,0 +1,325 @@
+/* TAGGER - Portfolio css custom */
+
+
+/* html */
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+/* backgrounds */
+
+.bg-white{
+    background-color: #FFFFFF;
+}
+
+.bg-black{
+    background-color: #1C1C1C;
+}
+
+.bg-gray-light{
+    background-color: #F5F5F5;
+}
+
+.bg-tagger-blue{
+    background-color: #5E7DEF;
+}
+/* .backgrounds */
+
+
+
+/* main */
+#main{
+    background-color: #F5F5F5;
+    margin: 0 auto;
+    padding: 0px 0px;
+}
+
+
+/* navbar */
+#main > #navbar{
+    position: fixed;
+    z-index: 9999;
+   
+}
+
+
+
+/* header */
+#main > #header{
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: sticky;
+    top: 0px;
+}
+
+/* header title */
+#main > #header .header-title{
+    margin: 0 auto;
+    padding: 10px 0px;
+    font-size: 8vw;
+    font-weight: 500;
+    color: #000;
+}
+
+/* header text */
+#main > #header .header-text{
+    margin: 0 auto;
+    padding: 10px 0px;
+    font-size: 20px;
+    font-weight: 100;
+    color: #000;
+}
+
+/* header button scroll */
+#main > #header .header-btn-scroll{
+    width: 50px;
+    height: 50px;
+    padding: 5px 5px;
+    margin: 20px auto 0px auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+
+/* contents works and contents devs*/
+#main > #content-works .content-bg{
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+    position: absolute;
+    background: #f5f5f5;
+    background-attachment: fixed;
+    background-image: url(../images/imagens/htmlsnip.png);
+    background-repeat: no-repeat;
+    background-position: center right 20px;
+    background-size:20%;
+    opacity: 0.1;
+}
+
+/* contents works and contents devs*/
+#main > #content-works ,  #main > #content-devs{
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 0px;
+    position: relative;
+    z-index:inherit;
+}
+
+#main >  #content-works .card{
+    box-shadow: 0.5px 0.5px 5px 5px #F5F5F5;
+    border: 0px solid #f5f5f5;
+    text-decoration: none;
+}
+
+#main >  #content-works .card-title{
+    padding: 5px 0px;
+    margin: 0px 0px;
+    color: #000;
+}
+
+#main >  #content-works .card-text{
+    padding: 0px 0px 10px 0px;
+    margin: 0px 0px;
+    color: #000;
+}
+
+#main >  #content-works .badge{
+    padding: 3px 5px 4px 5px;
+    font-size: 11px;
+    font-weight: 100;
+    justify-content: flex-start;
+}
+
+#main >  #content-works .devs{
+
+   
+}
+
+#main >  #content-works .devs img{
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 2px;
+    float: right;
+}
+
+#main > #content-works .btn-content ,  #main > #content-devs .btn-content{
+    background-color: #5E7DEF;
+    padding: 10px 20px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 3px;
+    text-decoration: none;
+    transition:0.3s;
+    position: relative;
+}
+
+#main > #content-works .btn-content:hover ,  #main > #content-devs .btn-content:hover{
+    background-color: rgb(71, 96, 185);
+    transition:0.3s;
+}
+
+/* contents cards*/
+#main > #content-works .card ,  #main > #content-devs .card{
+    margin: 15px auto;
+}
+
+
+/* contents body */
+#main > #content-works .content-body , #main > #content-devs .content-body{
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 0px;
+    position: sticky;
+    top: 65px;
+    z-index: 99;
+}
+
+/* contents title */
+#main > #content-works .content-title , #main > #content-devs .content-title{
+    font-size: 40px;
+    font-weight: 500;
+    color: #000;
+}
+
+/* contents text */
+#main > #content-works .content-text , #main > #content-devs .content-text{
+    font-size: 16px;
+    font-weight: 100;
+    color: #000;
+}
+
+/* content devs card */
+#main > #content-devs .card{
+    border: 1px solid #efefef;
+    text-align: center;
+}
+
+/* content card image */
+#main > #content-devs .card .card-img{
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    margin: 20px auto 0px auto;
+    border-radius: 50%;
+    box-shadow: 1px 1px 8px #888;
+     transition: box-shadow 0.3s;
+}
+
+#main > #content-devs .card .card-img .image{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    transition:0.3s;
+}
+#main > #content-devs .card .card-img .image:hover{
+    transform: scale(1.2);
+    transition:0.3s;
+}
+
+/* content card title */
+#main > #content-devs .card .card-title{
+    font-size: 18px;
+    font-weight: 900;
+}
+
+/* content card subtitle */
+#main > #content-devs .card .card-subtitle{
+    font-size: 14px;
+    font-weight: 100;
+    padding: 0px 0px;
+    margin: 10px 0px;
+    text-transform: uppercase;
+    color: #a8a8a8;
+}
+
+/* content card text */
+#main > #content-devs .card .card-text{
+    font-size: 16px;
+    font-weight: 100;
+    padding: 0px 0px;
+    margin: 10px 0px;
+    color: #000;
+}
+
+/* content-nav */
+#main > #content-devs .content-nav .nav-item .nav-link{
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background: #FFF;
+    padding: 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    color: #000;
+    transition:0.3s;
+}
+
+#main > #content-devs .content-nav .nav-item .nav-link:hover{
+    background: #5E7DEF;
+    color: #FFF;
+    transition:0.3s;
+    transform: scale(1.2);
+}
+
+#footer{
+    padding: 50px 0px 0px;
+    background-color: #5E7DEF;
+    position: relative;
+    color: #FFF;
+}
+
+#footer .column{
+    padding: 20px;
+}
+
+#footer .footer-img{
+    width: 50px;
+    border:3px solid #FFF;
+    padding: 0px;
+    margin: 0px 10px;
+}
+
+
+#footer .nav-footer .nav-item .nav-link{
+    color: #FFF;
+    border-radius: 3px;
+}
+
+#footer .nav-footer .nav-item .nav-link:hover{
+    background: rgba(0, 0, 0, 0.13);
+    color: #FFF;
+}
+
+#footer .tagger-copyright{
+    padding: 50px 0px 10px 0px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 100;
+    color: #FFF;
+    position: relative;
+    bottom: 0px;
+}
+
+
+
+

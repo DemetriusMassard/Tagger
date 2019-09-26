@@ -1,0 +1,41 @@
+/* template FashionStore */
+/* Dev: Fabricio Oliveria */
+
+#Produto{
+    margin: 50px 0px;
+    -webkit-animation-name: fade-in; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    animation-name: fade-in;
+    animation-duration: 1s;
+}
+@-webkit-keyframes fade-in {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+.carousel-item img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+.produto-desc{
+    padding: 40px;
+}
+.produto-desc h5{
+    font-size: 22px;
+    font-weight: 500;
+    color: #000;
+}
+.produto-desc p{
+    font-size: 18px;
+    font-weight: 100;
+    color: #6c6c6c;
+    text-align: justify;
+    text-transform: capitalize;
+}
+.pro-cod{
+    font-size: 20px;
+    font-weight: 500;
+    color: #e14141;
+    font-style: italic;
+    text-transform: capitalize;
+}

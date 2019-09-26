@@ -1,0 +1,82 @@
+/* template FashionStore */
+/* Dev: Fabricio Oliveria */
+
+.nav-logo:before{
+    text-align: center;
+    content: "FashionStore";
+    color: #FFF;
+    margin: 0 auto;
+    padding: 5px 8px 5px 8px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 10px;
+}
+.nav-options{
+    padding-top: 30px;
+}
+.nav-icon{
+    width: 18px;
+    height: 18px;
+}
+.nav-icon-sair{
+    width: 12px;
+    height: 12px;
+}
+.nav-icon-box{
+    width: 20px;
+    height: 20px;
+}
+.nav-icon-tab{
+    width: 20px;
+    height: 20px;
+    margin: 0px 5px 5px;
+}
+.nav-text-perfil{
+    margin-top: 20px;
+}
+.nav-img-perfil{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+    padding: 0px;
+    display: inline-block;
+}
+.nav-tabs{
+    border: 0px;
+}
+.nav-tabs .nav-link{
+    border: 0px;
+    border-radius: 0px;
+    color: #FFF;
+}
+.navbar-toggler{
+    border: 0px; 
+    color: #000;
+}
+.online{
+    width: 8px;
+    height: 8px;
+    background: #00ff00;
+    float: right;
+    border-radius: 50%;
+}
+
+.carrinho{
+    width: 8px;
+    height: 8px;
+    background: #00d8ff;
+    float: right;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 500px){
+    .nav-logo:before{
+        width: 68px;
+        content: "FStore";
+        left: 10px;
+        right: 100%;
+}

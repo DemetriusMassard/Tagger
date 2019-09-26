@@ -1,0 +1,157 @@
+.bg-android{
+    background: #77c159;
+}
+.text-android{
+    color: #77c159;
+}
+.text-android:hover{
+    color: #6aac4f;
+}
+
+.text-logo{
+    color: #77c159;
+}
+.navbar-default{
+    background: rgba(0, 0, 0, 0);
+    transition: 0.5s;
+}
+.navbar-default .navbar-nav > .nav-item > .nav-link{
+    color: #fff;
+    opacity: 0.8;
+    font-family:sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+}
+.navbar-default .text-logo{
+    font-size: 25px;
+    font-weight: 700;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    transition:0.1s;
+}
+.navbar-default .navbar-nav > .nav-item > .nav-link:hover{
+    color: #fff;
+    opacity: 1;
+}
+    
+.navbar-scroll{
+    background: #ffffff;
+    transition: 0.5s;
+}
+.navbar-scroll .text-logo{
+    font-size: 16px;
+    font-weight: 700;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    transition:0.1s;
+}
+.navbar-scroll .navbar-nav > .nav-item > .nav-link{
+    color: #000;
+    opacity: 0.8;
+    font-family:sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+}
+.navbar-scroll .navbar-nav > .nav-item > .nav-link:hover{
+    color: #000;
+    opacity: 1;
+}
+
+
+
+.header-banner{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #000;
+    background-image: url(../img/banners/index/banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.text-header{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    font-size:30px;
+    position: relative;
+    top: 40%;
+    font-weight: 700;
+    font-family: sans-serif;
+    line-height: 45px;
+    word-spacing: 5px;
+}
+
+
+
+hr{
+  border-color: black;
+  border-width: 3px;
+  max-width: 50px;
+}
+hr.light {
+  border-color: white;
+}
+.text-transparent{
+    color: rgba(255, 255, 255, 0.53);
+}
+.card-title{
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 100;
+    color: #363636;
+    text-overflow: clip;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 0px;
+}
+.card-body{
+    margin: 0 auto;
+    padding:0 auto;
+    overflow: hidden;
+}
+.card-img-top{
+    object-fit: cover;
+}
+#recentes{
+    overflow: hidden;
+    position: relative;
+}
+#recentes:before{
+    content: "";
+    background: #77c159;
+    background-image: url(../img/banners/index/banner.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: -100px;
+    transform: rotate(20deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

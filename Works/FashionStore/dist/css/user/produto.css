@@ -1,0 +1,31 @@
+/* template FashionStore */
+/* Dev: Fabricio Oliveria */
+
+#Produto{
+    margin: 50px 0px;
+}
+.carousel-item img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.produto-desc{
+    padding: 40px;
+}
+.produto-desc h5{
+    font-size: 22px;
+    font-weight: 500;
+    color: #000;
+}
+.produto-desc p{
+    font-size: 18px;
+    font-weight: 100;
+    color: #6c6c6c;
+    text-align: justify;
+}
+.pro-cod{
+    font-size: 20px;
+    font-weight: 500;
+    color: #e14141;
+    font-style: italic;
+}

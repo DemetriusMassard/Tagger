@@ -1,0 +1,72 @@
+.card{
+    background: #f2f2f2;
+    border: none;
+    box-shadow: 1px 1px 5px #888;
+    border-radius: 0px;
+    margin-top: 30px;
+    transition: ease-in-out border 0.3s;
+}
+.card-body{
+    margin: 0px;
+
+}
+.card-img-user{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50px;
+    margin: 0px 0px;
+    padding: 0px;
+}
+.card-info{
+    padding-top: 0px;
+    background:;
+    display:inline-grid;
+    margin: 0px 0px;
+}
+.card-title{
+    font-weight: 500;
+    font-size: 16px;
+    padding: 0px;
+    margin-top: 5px;
+}
+.card-text-status{
+    font-weight: 100;
+    font-size: 18px;
+    padding: 0px;
+    margin: 20px;
+}
+.card-text{
+    font-size: 14px;
+    margin: 5px;
+}
+.card-table{
+    padding: 5px;
+}
+.card-table thead th{
+    background: #9674c8;
+    color: #FFF;
+    font-weight: 500;
+    border: 2px solid #9674c8;
+    padding: 5px;
+    text-align: center;
+}
+.card-table tbody{
+    padding: 5px;
+}
+.card-table tbody tr:first{
+    background: red;
+}
+.card-table tbody td{
+    background: #bab0c9; 
+    color: #FFF;
+    border: 2px solid #bab0c9;
+    border-bottom: 2px solid #FFF;
+    border-left: 2px solid #FFF;
+    border-right: 2px solid #FFF;
+    padding: 5px;
+    text-align: center;
+    padding: 5px;
+    font-weight: 500;
+}
+
