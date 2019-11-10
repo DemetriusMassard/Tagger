@@ -6,8 +6,6 @@ html {
     scroll-behavior: smooth;
 }
 
-
-
 /* backgrounds */
 
 .bg-white{
@@ -43,8 +41,6 @@ html {
     z-index: 9999;
    
 }
-
-
 
 /* header */
 #main > #header{
@@ -216,28 +212,29 @@ html {
     overflow: hidden;
     margin: 20px auto 0px auto;
     border-radius: 50%;
-    box-shadow: 1px 1px 8px #888;
+    box-shadow: 1px 1px 8px white;
      transition: box-shadow 0.3s;
 }
-
+/* containner image developers */
 #main > #content-devs .card .card-img .image{
     width: 150px;
     height: 150px;
     object-fit: cover;
     transition:0.3s;
 }
+/*image developers */
 #main > #content-devs .card .card-img .image:hover{
     transform: scale(1.2);
-    transition:0.3s;
+    transition:0.5;
 }
 
-/* content card title */
+/* content card title description */
 #main > #content-devs .card .card-title{
     font-size: 18px;
     font-weight: 900;
 }
 
-/* content card subtitle */
+/* content card subtitle  description */
 #main > #content-devs .card .card-subtitle{
     font-size: 14px;
     font-weight: 100;
@@ -247,16 +244,7 @@ html {
     color: #a8a8a8;
 }
 
-/* content card text */
-#main > #content-devs .card .card-text{
-    font-size: 16px;
-    font-weight: 100;
-    padding: 0px 0px;
-    margin: 10px 0px;
-    color: #000;
-}
-
-/* content-nav */
+/* content-nav icons*/
 #main > #content-devs .content-nav .nav-item .nav-link{
     width: 30px;
     height: 30px;
@@ -280,7 +268,52 @@ html {
     transition:0.3s;
     transform: scale(1.2);
 }
+/* CSS FOR PURCHASE WEBSITES */
+.purchases{
+  width: 100%;
 
+}
+.purchases img{
+    height: 250px;
+    width: 250px;
+    margin: 30px;
+    float: inherit;
+    
+}
+#main .item1 {
+background-color: lightcoral;
+box-shadow: 1px 1px 1px whitesmoke;
+border-radius: 5px;
+}
+
+#main .item1:hover img{
+   transform: scale(1.2);
+    transition:1s;
+}
+
+#main .item2 {
+    background-color: lightblue;
+box-shadow: 1px 1px 1px whitesmoke;
+border-radius: 5px;
+}
+
+#main .item2:hover img{
+   transform: scale(1.2);
+    transition:1s;
+}
+
+#main .item3{
+    background-color: lightgreen;  
+box-shadow: 1px 1px 1px whitesmoke;
+border-radius: 5px;
+}
+
+#main .item3:hover img{
+   transform: scale(1.2);
+    transition:1s;
+}
+
+/* END CSS FOR PURCHASE WEBSITES */
 #footer{
     padding: 50px 0px 0px;
     background-color: #5E7DEF;
@@ -320,6 +353,11 @@ html {
     bottom: 0px;
 }
 
-
-
-
+/*contents forms */
+#main > #content-works ,  #main > #content-form{
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 0px;
+    position: relative;
+    z-index:inherit;
+}
