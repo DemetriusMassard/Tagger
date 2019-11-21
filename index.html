@@ -1,564 +1,802 @@
-{{<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
 
 <head>
 
-<!-- charset utf-8 -->
-<meta charset="UTF-8">
+    <!-- Caracteres Universal -->
+    <meta charset="utf-8">
 
-<!-- viewport scale -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Escala Visualização -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<!-- compatible ie -->
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Jquery-->
+    <script src="dist/frameworks/jquery/jquery-3.4.1.js"></script>
 
-<link rel="icon" type="image" sizes="any" href="dist/images/logos/tagger.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="dist/frameworks/bootstrap/css/bootstrap.css">
+    <script src="dist/frameworks/bootstrap/js/bootstrap.js"></script>
 
-<!-- jquery -->
-<script type="text/javascript" src="dist/frameworks/jquery/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 
-<!-- bootstrap -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="dist/frameworks/bootstrap/bootstrap-4.3.1.css">
-<script type="text/x-javascript" src="dist/frameworks/bootstrap/bootstrap-4.3.1.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="dist/frameworks/fontawesome/css/all.css">
+    <script src="dist/frameworks/fontawesome/js/all.js"></script>
 
-<!-- fontawesome -->
-<link rel="stylesheet" href="dist/frameworks/fontawesome/css/all.css">
-<script type="text/x-javascript" src="dist/frameworks/fontawesome/js/all.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="dist/custom/style.css">
 
-<!-- quicksearch -->
-<script src="dist/frameworks/quicksearch/jquery.quicksearch.js"></script>
+    <!-- Titulo -->
+    <title>TAGGERTEAM</title>
 
-<!-- custom -->
-<link rel="stylesheet" href="dist/custom/style.css">
-<script src="dist/custom/script.js"></script>
-    <link rel="stylesheet" href="dist/custom/customsite.css">
-
-<!-- title -->
-<title> TAGGER </title>
+    <link rel="icon" sizes="any" href="dist/images/icons/tagger.png">
 
 </head>
 
-<body id="main">
+<body>
 
-<!-- navbar-->
-<nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+    <!-- navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
 
-<!-- container -->
-<div class="container">
+        <!-- container -->
+        <div class="container">
 
-<a class="navbar-brand" href="#"><img src="dist/images/logos/tagger.svg" width="50px;"></a>
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
-    <span class="navbar-toggler-icon"></span>
-</button>
-
-<div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
-    <ul class="navbar-nav mr-auto">
-
-        <li class="nav-item">
-            <a class="nav-link" href="#">Home <span class="sr-only">(página atual)</span></a>
-        </li>
-
-        <li class="nav-item">
-            <a class="nav-link" href="#content-works">Trabalhos</a>
-        </li>
-
-        <li class="nav-item">
-            <a class="nav-link" href="#content-devs">Time</a>
-        </li>
-
-        <li class="nav-item">
-            <a class="nav-link" href="#">Contato</a>
-        </li>
-
-        <li class="nav-item">
-            <a class="nav-link" href="#">Sobre</a>
-        </li>
-
-    </ul>
-
-    <ul class="navbar-nav ml-auto">
-
-        <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fab fa-facebook-square fa-sm"></i></a>
-        </li>
-
-        <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fab fa-instagram fa-sm"></i></a>
-        </li>
-
-        <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fab fa-twitter fa-sm"></i></a>
-        </li>
-
-        <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fab fa-github fa-sm"></i></a>
-        </li>
-
-    </ul>
-
-</div>
-
-</div>
-<!-- .container -->
-
-</nav>
-<!-- .navbar -->
-
-
-
-<!-- header -->
-<header id="header" class="bg-white">
-
-<!-- container -->
-<div class="container">
-
-<!-- row -->
-<div class="row justify-content-center">
-
-    <!-- column -->
-    <div class="col-md-8">
-
-        <!-- header body text center -->
-        <div class="header-body text-center">
-
-            <!-- header title -->
-            <h5 class="header-title">TAGGER</h5>
-
-            <!-- header text-->
-            <p class="header-text">
-                Somos um grupo de desenvolvedores de sistemas web,
-                realizamos interfaces e soluções web, mantendo a alta qualidade de usabilidade para o usuario.
-            </p>
-
-            <!-- header button scroll -->
-            <a class="header-btn-scroll btn" href="#content-works"><i class="fas fa-arrow-down"></i></a>
-
-        </div>
-        <!-- .header body text center -->
-
-    </div>
-    <!-- .column -->
-
-</div>
-<!-- .row -->
-
-</div>
-<!-- .container -->
-
-</header>
-<!-- .header -->
-
-
-
-<!-- content -->
-<section id="content-works" class="bg-gray-light">
-
-<div class="content-bg"></div>
-
-<!-- container -->
-<div class="container">
-
-<!-- content body -->
-<div class="content-body bg-gray-light">
-
-    <!-- content title -->
-    <h5 class="content-title">Trabalhos</h5>
-
-    <!-- content text -->
-    <p class="content-text">Veja alguns de nossos trabalhos!</p>
-
-</div>
-<!-- .content body -->
-
-
-
-<!-- row -->
-<div class="row">
-
-    <!-- column -->
-    <div class="col-md-3">
-
-        <!-- card -->
-        <div class="card">
-
-            <a href="Works/ClickDroid/" target="_blank">
-
-                <!-- card image -->
-                <img class="card-img-top" src="dist/images/works/clickdroid-image.png">
-
+            <!-- navbar brand icon -->
+            <a class="navbar-brand" href="#">
+                <img src="dist/images/icons/tagger.svg" alt="" class="img-fluid" width="50px">
             </a>
 
-            <!-- card body -->
-            <div class="card-body">
+            <!-- navbar button toggle  -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
+            <!-- navbar collapse  -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-                <!-- card title -->
-                <h5 class="card-title">ClickDroid</h5>
-
-                <!-- card text -->
-                <p class="card-text">Downloads de Apps</p>
-
-                <div class="devs">
-
-                    <span class="badge badge-primary">Acadêmico</span>
-
-                    <a href="AllanFernandes/">
-                        <img src="dist/images/imagens/allan.jpg" />
-                    </a>
-
-                    <a href="FabricioOliveira/">
-                        <img src="dist/images/imagens/fabricio.jpg" />
-                    </a>
-
-                </div>
-
-            </div>
-            <!-- .card-body -->
-
-        </div>
-        <!-- .card -->
-
-    </div>
-    <!-- .column -->
-
-     <!-- column -->
-    <div class="col-md-3">
-
-        <!-- card -->
-        <div class="card">
-
-            <a href="Works/FashionStore/" target="_blank">
-
-                <!-- card image -->
-                <img class="card-img-top" src="dist/images/works/fashionstore-image.png">
-
-            </a>
-
-            <!-- card body -->
-            <div class="card-body">
-
-
-                <!-- card title -->
-                <h5 class="card-title">FashionStore</h5>
-
-                <!-- card text -->
-                <p class="card-text">Loja virtual</p>
-
-                <div class="devs">
-
-                    <span class="badge badge-danger">Freelancer</span>
-
-                    <a href="FabricioOliveira/">
-                        <img src="dist/images/imagens/fabricio.jpg" />
-                    </a>
-
-                </div>
-
-            </div>
-            <!-- .card-body -->
-
-        </div>
-        <!-- .card -->
-
-    </div>
-    <!-- .column -->
-
-
-</div>
-<!-- .row -->
-
-<div class="text-center mt-5">
-
-    <a href="#" class="btn-content">Visualizar todos os projetos</a>
-
-</div>
-
-</div>
-<!-- .container -->
-
-</section>
-<!-- .content -->
-
-
-
-<!-- content -->
-<section id="content-devs" class="bg-white">
-
-<!-- container -->
-<div class="container">
-
-<!-- content body -->
-<div class="content-body bg-white">
-
-    <!-- content title -->
-    <h5 class="content-title">Time</h5>
-
-    <!-- content text -->
-    <p class="content-text">Para acessar o portfólio, basta clicar na imagem de um integrante!</p>
-
-</div>
-<!-- .content body -->
-<!-- row -->
-<div class="row">
-
-    <!-- column -->
-    <div class="col-md-3">
-
-        <!-- card -->
-        <div class="card">
-
-            <!-- card image -->
-            <a href="FabricioOliveira/">
-
-                <div class="card-img" data-toggle="tooltip" data-html="true" title="<em>Saiba mais</em>">
-                    <img class="image" src="dist/images/imagens/fabricio.jpg">
-                </div>
-
-            </a>
-
-            <!-- card body -->
-            <div class="card-body">
-
-
-                <!-- card title -->
-                <h5 class="card-title">Fabricio Oliveira</h5>
-
-                <!-- card subtitle -->
-                <h5 class="card-subtitle">Web Developer FrontEnd</h5>
-
-                <ul class="nav content-nav justify-content-center mt-0 py-0">
+                <!-- list right -->
+                <ul class="navbar-nav mr-auto">
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="icon fab fa-facebook-square fa-sm"></i></a>
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="icon fab fa-instagram fa-sm"></i></a>
+                        <a class="nav-link" href="#content-template">Templates</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="icon fab fa-twitter fa-sm"></i></a>
+                        <a class="nav-link" href="#content-works">Trabalhos</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="icon fab fa-github fa-sm"></i></a>
+                        <a class="nav-link" href="#content-team">Time</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#content-contact">Contato</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#content-about">Sobre</a>
                     </li>
 
                 </ul>
+                <!-- .list right -->
 
-
-            </div>
-            <!-- .card-body -->
-
-        </div>
-        <!-- .card -->
-
-    </div>
-    <!-- .column -->
-
-    <!-- column -->
-    <div class="col-md-3">
-
-        <!-- card -->
-        <div class="card">
-
-
-            <!-- card image -->
-            <a href="AllanFernandes/">
-
-                <div class="card-img" data-toggle="tooltip" data-html="true" title="<em>Saiba mais</em>">
-                    <img class="image" src="dist/images/imagens/allan.jpg">
-                </div>
-
-            </a>
-
-            <!-- card body -->
-            <div class="card-body">
-
-                <!-- card title -->
-                <h5 class="card-title">Allan Fernandes</h5>
-
-                <!-- card subtitle -->
-                <h5 class="card-subtitle">Developer</h5>
-
-                <ul class="nav content-nav justify-content-center mt-0 py-0">
+                <!-- list left -->
+                <ul class="navbar-nav ml-auto">
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="icon fab fa-facebook-square fa-sm"></i></a>
+                        <a class="nav-link" href="#"><i class="fab fa-facebook-square"></i></a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="icon fab fa-instagram fa-sm"></i></a>
+                        <a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="icon fab fa-twitter fa-sm"></i></a>
+                        <a class="nav-link" href="#"><i class="fab fa-twitter"></i></a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="icon fab fa-github fa-sm"></i></a>
+                        <a class="nav-link" href="#"><i class="fab fa-github"></i></a>
                     </li>
 
                 </ul>
+                <!-- .list left -->
 
             </div>
-            <!-- .card-body -->
+            <!-- .navbar collapse  -->
 
         </div>
-        <!-- .card -->
+        <!-- .container -->
 
-    </div>
-    <!-- .column -->
+    </nav>
+    <!-- .navbar -->
 
-</div>
-<!-- .row -->
-    
-<!-- Form sites for purchase -->
-<div class="container purchases bg-gray-light">
-    <!-- card title -->
-    <h5 class="card-title">Adquira seu site pré montado!</h5>
-    <p class="content-text"> Todos os sites são preenchidos com o seu conteúdo e a seu gosto</p>
-     <div class="row">
-         
-       <div class="col-md-4 item1">
-            <p class="content-text"> Modelo1</p>
-           <img src="dist/images/imagens/43.jpg" href="" title="Modelo de site 1 ">
-             </div>
-         
-             <div class="col-md-4 item2">
-              <p class="content-text"> Modelo2</p>
-                 <img src="dist/images/imagens/43.jpg" href="#" title="Modelo de site 2">
+
+    <!-- header -->
+    <header id="header" class="bg-white text-black">
+
+        <!-- container -->
+        <div class="container">
+
+            <!-- carousel slide -->
+            <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+
+                <!-- carousel-inner -->
+                <div class="carousel-inner">
+
+
+                    <!-- carousel item -->
+                    <div class="carousel-item active">
+
+                        <!-- carousel content -->
+                        <div class="carousel-content">
+
+                            <!-- description -->
+                            <div class="description">
+
+
+                                <h6 class="subtitle">_quem somos ?</h6>
+
+                                <h5 class="title">TAGGER</h5>
+
+                                <p class="text">
+
+                                    Somos um grupo de desenvolvedores de sistemas web, realizamos interfaces e soluções web, mantendo a alta qualidade de usabilidade para o usuario.
+
+                                </p>
+
+                                <a class="btn btn-button" href="#">Saiba mais</a>
+                                <a class="btn btn-outline" href="#">Orçamento</a>
+
+                            </div>
+                            <!-- .description -->
+
+                        </div>
+                        <!-- .carousel content -->
+
+                    </div>
+                    <!-- .carousel item -->
+
+
+                    <!-- carousel item -->
+                    <div class="carousel-item">
+
+                        <!-- carousel content -->
+                        <div class="carousel-content">
+
+                            <!-- description -->
+                            <div class="description">
+
+                                <h6 class="subtitle">_faça a sua escolha</h6>
+
+                                <h5 class="title">Templates</h5>
+
+                                <p class="text">
+
+                                    Modelos de templates web pré prontas para serem utilizadas a sou modo
+                                    , escolha a sua e faça o preenchimento como quiser.
+
+                                </p>
+
+                                <a class="btn btn-button" href="#">Modelos prontos</a>
+                                <a class="btn btn-outline" href="#">Orçamento</a>
+
+                            </div>
+                            <!-- .description -->
+
+                        </div>
+
+                        <!-- .carousel content -->
+                    </div>
+                    <!-- .carousel item -->
+
+
+                    <!-- carousel item-->
+                    <div class="carousel-item">
+
+                        <!-- carousel content -->
+                        <div class="carousel-content">
+
+                            <!-- description -->
+                            <div class="description">
+
+                                <h6 class="subtitle">_vamos trabalhar juntos ?</h6>
+
+                                <h5 class="title">Faça um orçamento</h5>
+
+                                <p class="text">
+
+                                    Faça um orçamento, realizamos projetos totalmente customizados com alta perfomace
+                                    Entre em contato conosco.
+
+                                </p>
+
+                                <a class="btn btn-button" href="#">Saiba mais</a>
+                                <a class="btn btn-outline" href="#">Orçamento</a>
+
+                            </div>
+                            <!-- .description -->
+
+                        </div>
+                        <!-- .carousel content -->
+
+                    </div>
+                    <!-- .carousel item-->
+
+
+                </div>
+                <!-- .carousel-inner -->
+
+                <a class="carousel-control-prev carousel-control" href="#carouselIndicators" role="button" data-slide="prev">
+                    <span class="fas fa-chevron-left fa-lg" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next carousel-control" href="#carouselIndicators" role="button" data-slide="next">
+                    <span class="fas fa-chevron-right fa-lg" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselIndicators" data-slide-to="2"></li>
+                </ol>
+
+                <a href="#content-template" class="text-dark"><i class="fas fa-arrow-down fa-lg"></i></a>
+
             </div>
-         
-          <div class="col-md-4 item3">
-         <p class="content-text"> Modelo3</p>
-              <img src=" dist/images/imagens/43.jpg"href="#" title="Modelo de site 3">
+            <!-- .carousel slide -->
+
         </div>
-         
-    </div>
-</div>
-    
-<!-- End of content sites of purchase-->
+        <!-- .container -->
 
-</div>
-<!-- .container -->
+    </header>
+    <!-- .header -->
 
-    
-</section>
-<!-- .content -->
-    
-    
 
-    
-<!-- footer -->
-<footer id="footer">
+    <!-- section -->
+    <section id="content-template" class="bg-black text-white">
 
-<!-- container -->
-<div class="container">
+        <!-- container -->
+        <div class="container">
 
-<div class="row">
+            <div class="content-titles bg-black sticky-top">
 
-    <div class=" column col-md-3">
+                <!-- title normal -->
+                <h5 class="title-normal">Templates</h5>
 
-        <img class="footer-img" src="dist/images/logos/tagger.svg" />
+                <!-- text -->
+                <p class="text">Adquira seu site pré montado!</p>
 
-        TAGGERTeam&copy;
+            </div>
 
-    </div>
+            <!-- row -->
+            <div class="row mt-5">
 
-    <div class=" column col-md-3">
 
-        <h5 class="footer-title">Nossas Páginas</h5>
+                <!-- column -->
+                <div class="col-md-3">
 
-        <ul class="nav nav-footer flex-column">
+                    <a href="#" class="card card-effect bg-transparent text-white text-decoration-none">
 
-            <li class="nav-item">
-                <a class="nav-link" href="#">Trabalhos</a>
-            </li>
+                        <h5 class="text text-center py-2">Template Modelo 01</h5>
+                        <!-- card -->
+                        <div class="card-body bg-white px-0 py-0 rounded">
 
-            <li class="nav-item">
-                <a class="nav-link" href="#">Time</a>
-            </li>
+                            <img class="img-fluid" src="dist/images/photos/exemplos/modelo_01.png" alt="">
 
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contato</a>
-            </li>
+                        </div>
+                        <!-- card -->
 
-            <li class="nav-item">
-                <a class="nav-link" href="#">Sobre</a>
-            </li>
+                    </a>
 
-        </ul>
+                </div>
+                <!-- column -->
 
-    </div>
 
-    <div class=" column col-md-3">
+                <!-- column -->
+                <div class="col-md-3">
 
-        <h5 class="footer-title">Redes Sociais</h5>
+                    <a href="#" class="card card-effect bg-transparent text-white text-decoration-none">
 
-        <ul class="nav nav-footer flex-column">
+                        <h5 class="text text-center py-2">Template Modelo 02</h5>
 
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <i class="fab fa-facebook-square"></i> -
-                    Facebook</a>
-            </li>
+                        <!-- card -->
+                        <div class="card-body bg-white px-0 py-0 rounded">
 
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <i class="fab fa-instagram"></i> -
-                    Instagram
-                </a>
-            </li>
+                            <img class="img-fluid" src="dist/images/photos/exemplos/modelo_02.png" alt="">
 
-        </ul>
+                        </div>
+                        <!-- card -->
 
-    </div>
+                    </a>
 
-    <div class=" column col-md-3">
+                </div>
+                <!-- column -->
 
-        <h5 class="footer-title">Contatos</h5>
 
-        <ul class="nav nav-footer flex-column">
+                <!-- column -->
+                <div class="col-md-3">
 
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <i class="fas fa-envelope"></i> -
-                    Email: suporte@taggerteam.com</a>
-            </li>
+                    <a href="#" class="card card-effect bg-transparent text-white text-decoration-none">
+                        <h5 class="text text-center py-2">Template Modelo 03</h5>
 
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <i class="fas fa-phone"></i> -
-                    11 965662035
-                </a>
-            </li>
+                        <!-- card -->
+                        <div class="card-body bg-white px-0 py-0 rounded">
 
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <i class="fas fa-phone"></i> -
-                    11 981707508
-                </a>
-            </li>
+                            <img class="img-fluid" src="dist/images/photos/exemplos/modelo_03.png" alt="">
 
-        </ul>
+                        </div>
+                        <!-- card -->
+                    </a>
 
-    </div>
+                </div>
+                <!-- column -->
 
-    <div class=" column col-md-12">
+                <!-- column -->
+                <div class="col-md-3">
 
-        <h5 class="tagger-copyright">TaggerTeam &copy; 2019</h5>
+                    <a href="#" class="card card-effect bg-transparent text-white text-decoration-none">
+                        <h5 class="text text-center py-2">Template Customizada</h5>
 
-    </div>
+                        <!-- card -->
+                        <div class="card-body bg-white px-0 py-0 rounded">
 
-</div>
+                            <img class="img-fluid" src="dist/images/photos/exemplos/modelo_04.png" alt="">
 
-</div>
-<!-- .container -->
+                        </div>
+                        <!-- card -->
+                    </a>
 
-</footer>
-<!-- .footer -->
+                </div>
+                <!-- column -->
 
-</body></html>
-}}
+
+            </div>
+            <!-- .row -->
+
+        </div>
+        <!-- .container -->
+
+    </section>
+    <!-- .section -->
+
+
+    <!-- section -->
+    <section id="content-works" class="bg-primary text-white">
+
+        <!-- container -->
+        <div class="container">
+
+            <div class="content-titles bg-primary sticky-top">
+
+                <!-- title normal -->
+                <h5 class="title-normal">Trabalhos</h5>
+
+                <!-- text -->
+                <p class="text">Veja alguns de nossos trabalhos!</p>
+
+            </div>
+
+            <!-- row -->
+            <div class="row mt-5">
+
+
+                <!-- column -->
+                <div class="col-md-3">
+
+                    <!-- card -->
+                    <div class="card shadow-sm">
+
+                        <a href="#" class="card-link">
+
+                            <img src="dist/images/works/clickdroid-image.png" class="card-img-top" alt="...">
+
+                            <div class="card-body text-black">
+
+                                <h5 class="card-title">ClickDroid</h5>
+
+                                <p class="card-text">
+                                    Downloads de apps
+                                </p>
+
+                                <span class="badge badge-primary">Acadêmico</span>
+
+                            </div>
+
+                        </a>
+
+                    </div>
+
+                    <!-- card -->
+
+                </div>
+                <!-- column -->
+
+                <!-- column -->
+                <div class="col-md-3">
+
+                    <!-- card -->
+                    <div class="card shadow-sm">
+
+                        <a href="#" class="card-link">
+
+                            <img src="dist/images/works/fashionstore-image.png" class="card-img-top" alt="...">
+
+                            <div class="card-body text-black">
+
+                                <h5 class="card-title">FashionStore</h5>
+
+                                <p class="card-text">
+                                    Loja Virtual
+                                </p>
+
+                                <span class="badge badge-danger">Freelancer</span>
+
+                            </div>
+
+                        </a>
+
+                    </div>
+
+                    <!-- card -->
+
+                </div>
+                <!-- column -->
+
+                <!-- column -->
+                <div class="col-md-3">
+
+                    <!-- card -->
+                    <div class="card shadow-sm">
+
+                        <a href="#" class="card-link">
+
+                            <img src="dist/images/works/fashionstore-image.png" class="card-img-top" alt="...">
+
+                            <div class="card-body text-black">
+
+                                <h5 class="card-title">FashionStore</h5>
+
+                                <p class="card-text">
+                                    Loja Virtual
+                                </p>
+
+                                <span class="badge badge-danger">Freelancer</span>
+
+                            </div>
+
+                        </a>
+
+                    </div>
+
+                    <!-- card -->
+
+                </div>
+                <!-- column -->
+
+
+                <!-- column -->
+                <div class="col-md-3">
+
+                    <!-- card -->
+                    <div class="card shadow-sm">
+
+                        <a href="#" class="card-link">
+
+                            <img src="dist/images/works/fashionstore-image.png" class="card-img-top" alt="...">
+
+                            <div class="card-body text-black">
+
+                                <h5 class="card-title">FashionStore</h5>
+
+                                <p class="card-text">
+                                    Loja Virtual
+                                </p>
+
+                                <span class="badge badge-danger">Freelancer</span>
+
+                            </div>
+
+                        </a>
+
+                    </div>
+
+                    <!-- card -->
+
+                </div>
+                <!-- column -->
+
+
+            </div>
+            <!-- .row -->
+
+            <div class="text-center py-5">
+                <a href="#" class="btn btn-outline-white">Veja mais</a>
+            </div>
+
+        </div>
+        <!-- .container -->
+
+    </section>
+    <!-- .section -->
+
+
+    <!-- section -->
+    <section id="content-team" class="bg-white text-black">
+
+        <!-- container -->
+        <div class="container">
+
+            <div class="content-titles bg-white sticky-top">
+
+                <!-- title normal -->
+                <h5 class="title-normal">Time</h5>
+
+                <!-- text -->
+                <p class="text">Para acessar o portfólio, basta clicar na imagem de um integrante!</p>
+
+            </div>
+
+            <!-- row -->
+            <div class="row mt-5">
+
+
+                <!-- column -->
+                <div class="col-md-3">
+
+                    <!-- card -->
+                    <div class="card card-dev shadow-sm">
+
+                        <a href="fabriciooliveira/" class="card-image">
+
+                            <img src="dist/images/devs/fabricio.jpg" class="card-img-top" alt="...">
+
+                        </a>
+
+                        <div class="card-body text-black">
+
+                            <h5 class="card-title">Fabricio Oliveira</h5>
+
+                            <p class="card-text">
+                                Web Developer - Front End
+                            </p>
+
+                            <ul class="nav content-nav justify-content-center mt-0 py-0">
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <i class="icon fab fa-facebook-square fa-sm"></i>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <i class="icon fab fa-instagram fa-sm"></i>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <i class="icon fab fa-twitter fa-sm"></i>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <i class="icon fab fa-github fa-sm"></i>
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+
+
+                    </div>
+
+                    <!-- card -->
+
+                </div>
+                <!-- column -->
+
+
+                <!-- column -->
+                <div class="col-md-3">
+
+                    <!-- card -->
+                    <div class="card card-dev shadow-sm">
+
+                        <a href="allanfernandes/" class="card-image">
+
+                            <img src="dist/images/devs/allan.jpg" class="card-img-top" alt="...">
+
+                        </a>
+
+                        <div class="card-body text-black">
+
+                            <h5 class="card-title">Allan Fernandes</h5>
+
+                            <p class="card-text">
+                                Developer
+                            </p>
+
+                            <ul class="nav content-nav justify-content-center mt-0 py-0">
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <i class="icon fab fa-facebook-square fa-sm"></i>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <i class="icon fab fa-instagram fa-sm"></i>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <i class="icon fab fa-twitter fa-sm"></i>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <i class="icon fab fa-github fa-sm"></i>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <!-- card -->
+
+                </div>
+                <!-- column -->
+
+
+            </div>
+            <!-- .row -->
+
+        </div>
+        <!-- .container -->
+
+    </section>
+    <!-- .section -->
+
+    <footer id="footer">
+
+        <!-- container -->
+        <div class="container">
+
+            <div class="row">
+
+                <div class=" column col-md-2">
+
+                    <div class="text-center">
+
+                        <img class="footer-img" src="dist/images/icons/tagger.png">
+
+                        <p class="py-2">TAGGERTEAM</p>
+
+                    </div>
+
+
+                </div>
+
+                <div class=" column col-md-3">
+
+                    <h5 class="footer-title">Nossas Páginas</h5>
+
+                    <ul class="nav nav-footer flex-column">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Trabalhos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Time</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contato</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sobre</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class=" column col-md-3">
+
+                    <h5 class="footer-title">Redes Sociais</h5>
+
+                    <ul class="nav nav-footer flex-column">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fab fa-facebook-square"></i> -
+                                Facebook</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fab fa-instagram"></i> -
+                                Instagram
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fab fa-twitter"></i> -
+                                Twitter
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fab fa-github"></i> -
+                                Github
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class=" column col-md-4">
+
+                    <h5 class="footer-title">Contatos</h5>
+
+                    <ul class="nav nav-footer flex-column">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-envelope"></i> -
+                                suporte@taggerteam.com</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-phone-square-alt"></i> -
+                                11 965662035
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-phone-square-alt"></i> -
+                                11 981707508
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class=" column col-md-12">
+
+                    <h5 class="tagger-copyright">TaggerTeam © 2019</h5>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- .container -->
+
+    </footer>
+
+</body>
+
+</html>

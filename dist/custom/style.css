@@ -1,320 +1,288 @@
 /* TAGGER - Portfolio css custom */
 
 
+
+
+/* paleta de cores */
+:root {
+    --black: #000000;
+    --dark: #363636;
+    --white: #FFFFFF;
+    --light: #F5F5F5;
+}
+
+
+
 /* html */
 html {
     scroll-behavior: smooth;
 }
 
-/* backgrounds */
-
-.bg-white{
-    background-color: #FFFFFF;
-}
-
-.bg-black{
-    background-color: #1C1C1C;
-}
-
-.bg-gray-light{
-    background-color: #F5F5F5;
-}
-
-.bg-tagger-blue{
-    background-color: #5E7DEF;
-}
-/* .backgrounds */
 
 
-
-/* main */
-#main{
-    background-color: #F5F5F5;
-    margin: 0 auto;
-    padding: 0px 0px;
-}
-
-
-/* navbar */
-#main > #navbar{
-    position: fixed;
-    z-index: 9999;
-   
-}
-
-/* header */
-#main > #header{
+/* body */
+body {
     width: 100%;
-    height: 100vh;
-    margin: 0 auto;
-    padding: 0px 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: sticky;
-    top: 0px;
+    box-sizing: border-box;
 }
 
-/* header title */
-#main > #header .header-title{
-    margin: 0 auto;
-    padding: 10px 0px;
-    font-size: 8vw;
-    font-weight: 500;
-    color: #000;
+
+/* Backgrounds */
+.bg-black {
+    background-color: var(--black);
 }
 
-/* header text */
-#main > #header .header-text{
-    margin: 0 auto;
-    padding: 10px 0px;
+.bg-dark {
+    background-color: var(--dark);
+}
+
+.bg-white {
+    background-color: var(--white);
+}
+
+.bg-light {
+    background-color: var(--light);
+}
+
+/* .Backgrounds */
+
+
+
+/* textos */
+.title {
+    font-size: 60px;
+}
+
+.title-normal {
+    font-size: 30px;
+}
+
+.subtitle {
     font-size: 20px;
-    font-weight: 100;
+}
+
+.text {
+    font-size: 16px;
+}
+
+.text-white{
+    color: white;
+}
+
+.text-black{
+    color: black;
+}
+/* .textos */
+
+
+
+/* botões */
+.btn {
+    padding: 10px 25px;
+    margin: 10px 5px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+.btn-button {
+    border: 3px solid black;
+    background-color: black;
+    color: #FFF;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.btn-button:hover {
+    background-color: #363636;
+    border: 3px solid #363636;
+    color: #FFF;
+    transition: 0.3s;
+}
+
+
+.btn-outline {
+    border: 3px solid black;
     color: #000;
+    border-radius: 50px;
+    transition: 0.3s;
 }
 
-/* header button scroll */
-#main > #header .header-btn-scroll{
-    width: 50px;
-    height: 50px;
-    padding: 5px 5px;
-    margin: 20px auto 0px auto;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    font-size: 20px;
-    font-weight: 100;
+.btn-outline:hover {
+    opacity: 0.8;
+    transition: 0.3s;
 }
 
-
-/* contents works and contents devs*/
-#main > #content-works .content-bg{
-    width: 100%;
-    height: 100vh;
-    z-index: 0;
-    position: absolute;
-    background: #f5f5f5;
-    background-attachment: fixed;
-    background-image: url(../images/imagens/htmlsnip.png);
-    background-repeat: no-repeat;
-    background-position: center right 20px;
-    background-size:20%;
-    opacity: 0.1;
+.btn-outline-white{
+    border: 3px solid white;
+    color: #FFF;
+    border-radius: 50px;
+    transition: 0.3s;
 }
 
-/* contents works and contents devs*/
-#main > #content-works ,  #main > #content-devs{
-    width: 100%;
-    margin: 0 auto;
-    padding: 50px 0px;
-    position: relative;
-    z-index:inherit;
+.btn-outline-white:hover {
+    color: white;
+    opacity: 0.8;
+    transition: 0.3s;
 }
 
-#main >  #content-works .card{
-    box-shadow: 0.5px 0.5px 5px 5px #F5F5F5;
-    border: 0px solid #f5f5f5;
-    text-decoration: none;
-}
+/* .botões */
 
-#main >  #content-works .card-title{
-    padding: 5px 0px;
-    margin: 0px 0px;
-    color: #000;
-}
 
-#main >  #content-works .card-text{
-    padding: 0px 0px 10px 0px;
-    margin: 0px 0px;
-    color: #000;
-}
-
-#main >  #content-works .badge{
+/* badge */
+.badge{
     padding: 3px 5px 4px 5px;
     font-size: 11px;
     font-weight: 100;
-    justify-content: flex-start;
-}
-
-#main >  #content-works .devs{
-
-   
-}
-
-#main >  #content-works .devs img{
-    width: 25px;
-    height: 25px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin: 2px;
-    float: right;
-}
-
-#main > #content-works .btn-content ,  #main > #content-devs .btn-content{
-    background-color: #5E7DEF;
-    padding: 10px 20px;
-    color: #FFF;
-    font-size: 16px;
-    font-weight: 500;
-    border-radius: 3px;
-    text-decoration: none;
-    transition:0.3s;
-    position: relative;
-}
-
-#main > #content-works .btn-content:hover ,  #main > #content-devs .btn-content:hover{
-    background-color: rgb(71, 96, 185);
-    transition:0.3s;
-}
-
-/* contents cards*/
-#main > #content-works .card ,  #main > #content-devs .card{
-    margin: 15px auto;
 }
 
 
-/* contents body */
-#main > #content-works .content-body , #main > #content-devs .content-body{
+/* header */
+header {
     width: 100%;
-    margin: 0 auto;
-    padding: 10px 0px;
-    position: sticky;
-    top: 65px;
-    z-index: 99;
+    height: 100vh;
 }
 
-/* contents title */
-#main > #content-works .content-title , #main > #content-devs .content-title{
-    font-size: 40px;
-    font-weight: 500;
-    color: #000;
-}
-
-/* contents text */
-#main > #content-works .content-text , #main > #content-devs .content-text{
-    font-size: 16px;
-    font-weight: 100;
-    color: #000;
-}
-
-/* content devs card */
-#main > #content-devs .card{
-    border: 1px solid #efefef;
+header .carousel {
     text-align: center;
 }
 
-/* content card image */
-#main > #content-devs .card .card-img{
-    width: 150px;
-    height: 150px;
-    overflow: hidden;
-    margin: 20px auto 0px auto;
-    border-radius: 50%;
-    box-shadow: 1px 1px 8px white;
-     transition: box-shadow 0.3s;
-}
-/* containner image developers */
-#main > #content-devs .card .card-img .image{
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    transition:0.3s;
-}
-/*image developers */
-#main > #content-devs .card .card-img .image:hover{
-    transform: scale(1.2);
-    transition:0.5;
+header .carousel .carousel-control {
+    color: var(--black);
+    opacity: 1;
 }
 
-/* content card title description */
-#main > #content-devs .card .card-title{
-    font-size: 18px;
-    font-weight: 900;
+header .carousel .carousel-indicators {
+    bottom: 100px;
 }
 
-/* content card subtitle  description */
-#main > #content-devs .card .card-subtitle{
-    font-size: 14px;
-    font-weight: 100;
-    padding: 0px 0px;
-    margin: 10px 0px;
-    text-transform: uppercase;
-    color: #a8a8a8;
+header .carousel .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    background-color: var(--black);
+    border-radius: 50px;
 }
 
-/* content-nav icons*/
-#main > #content-devs .content-nav .nav-item .nav-link{
-    width: 30px;
-    height: 30px;
-    margin: 0 5px;
-    border-radius: 50%;
-    background: #FFF;
-    padding: 0px 0px;
+header .carousel .carousel-content {
+    width: 100%;
+    height: 85vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
     align-items: center;
+    align-content: center;
     text-align: center;
+}
+
+header .carousel .description {
+    width: 600px;
+}
+
+/* .header */
+
+
+
+/* section */
+section {
+    width: 100%;
+    padding: 50px 0px;
+}
+
+section .content-titles{
+    top: 75px;
+    padding: 15px 0px 2px 0px;
+}
+
+section .card{
+    border: 0px;
+}
+
+section .card-effect{
+    transition: 0.2s;
+    transform: scale(1);
+}
+
+section .card-effect:hover {
+    transition: 0.2s;
+    transform: scale(1.05);
+}
+
+section .card-link{
+    text-decoration: none;
+    color: inherit;
+}
+
+section .card-link:hover{
+    text-decoration: none;
+}
+
+section .card-dev{
+    border: 1px solid #e0e0e0;
+    text-align: center;
+}
+
+section .card-dev .card-title{
+    font-size: 18px;
+    font-weight: 800;
+}
+
+section .card-dev .card-text{
+    font-size: 14px;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #888;
+}
+
+section .card-dev .card-image{
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    box-shadow: 0.5px 0.5px 8px #888;
+    overflow: hidden;
+}
+
+section .card-dev img{
+    transition: transform 0.3s;
+}
+
+section .card-dev img:hover{
+    transform: scale(1.1);
+}
+
+section .card-dev .nav{
+    padding: 0px;
+}
+
+section .card-dev .nav .nav-link{
+    width: 30px;
+    height: 30px;
+    margin: 0px 5px;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    border-radius: 50%;
     color: #000;
     transition:0.3s;
 }
 
-#main > #content-devs .content-nav .nav-item .nav-link:hover{
-    background: #5E7DEF;
-    color: #FFF;
+section .card-dev .nav .nav-link:hover{
     transition:0.3s;
+    background: royalblue;
+    color: #FFF;
     transform: scale(1.2);
 }
-/* CSS FOR PURCHASE WEBSITES */
-.purchases{
-  width: 100%;
 
-}
-.purchases img{
-    height: 250px;
-    width: 250px;
-    margin: 30px;
-    float: inherit;
-    
-}
-#main .item1 {
-background-color: lightcoral;
-box-shadow: 1px 1px 1px whitesmoke;
-border-radius: 5px;
-}
 
-#main .item1:hover img{
-   transform: scale(1.2);
-    transition:1s;
-}
-
-#main .item2 {
-    background-color: lightblue;
-box-shadow: 1px 1px 1px whitesmoke;
-border-radius: 5px;
-}
-
-#main .item2:hover img{
-   transform: scale(1.2);
-    transition:1s;
-}
-
-#main .item3{
-    background-color: lightgreen;  
-box-shadow: 1px 1px 1px whitesmoke;
-border-radius: 5px;
-}
-
-#main .item3:hover img{
-   transform: scale(1.2);
-    transition:1s;
-}
-
-/* END CSS FOR PURCHASE WEBSITES */
 #footer{
+    margin: 0 auto;
     padding: 50px 0px 0px;
     background-color: #5E7DEF;
     position: relative;
@@ -353,11 +321,86 @@ border-radius: 5px;
     bottom: 0px;
 }
 
-/*contents forms */
-#main > #content-works ,  #main > #content-form{
-    width: 100%;
-    margin: 0 auto;
-    padding: 50px 0px;
-    position: relative;
-    z-index:inherit;
+
+
+@media (max-width: 991.98px) {
+    header .carousel .description {
+        width: 400px;
+    }
+}
+
+@media (max-width: 767.98px) {
+
+    /* botões */
+    .btn {
+        padding: 10px 25px;
+        margin: 10px 5px;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 700;
+    }
+
+    .title {
+        font-size: 50px;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+
+    header .carousel .description {
+        width: 400px;
+    }
+}
+
+@media (max-width: 575.98px) {
+
+    /* botões */
+    .btn {
+        padding: 10px 25px;
+        margin: 8px 5px;
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+    header .carousel .description {
+        width: 300px;
+    }
+
+}
+
+
+@media (max-width: 400px) {
+
+    /* botões */
+    .btn {
+        padding: 8px 15px;
+        margin: 8px 5px;
+        text-transform: uppercase;
+        font-size: 8px;
+        font-weight: 500;
+    }
+
+
+    .title {
+        font-size: 30px;
+    }
+
+    .title-normal {
+        font-size: 20px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+    }
+
+    .text {
+        font-size: 12px;
+    }
+
+    header .carousel .description {
+        width: 200px;
+    }
+
 }
