@@ -404,3 +404,23 @@ section .card-dev .nav .nav-link:hover{
     }
 
 }
+ div#formtitle {
+    color: white;
+     text-align: left;
+     font-size: 30px;
+     background-color: black;
+     width: 100%;
+     height:100px;
+    
+}
+ div#formtitle p{
+    color: white;
+     text-align: left;
+     font-size: 20px;
+  
+    
+}
+
+
+
+
